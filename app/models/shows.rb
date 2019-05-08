@@ -1,5 +1,5 @@
 class Show < ActiveRecord::Base
-  
+
   def Show::highest_rating
     Show.maximum(:rating)
   end
@@ -27,5 +27,5 @@ class Show < ActiveRecord::Base
   def Show::shows_by_alphabetical_order
     Show.order(:name)
   end
-  
+
 end
